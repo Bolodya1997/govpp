@@ -1,0 +1,57 @@
+VPP Version                 : 21.06.0-9~g6f117ce4a
+Binapi-generator version    : govpp v0.4.0-dev
+VPP Base commit             : 1372178e0 fib: During the mfib lookup set the unicast FIB index in the packet so that a uRPF check on a for-us packet is done in the correct VRF
+------------------ Cherry picked commits --------------------
+gerrit:33020/2 l3xc: reset dpo on delete
+gerrit:33303/2 memif: fix offset
+gerrit:32685/4 wireguard: add events for peer
+gerrit:32009/5 wireguard: add ipv6 support
+gerrit:32443/7 wireguard: use the same udp-port for multi-tunnel
+gerrit:32413/6 wireguard: move adjacency processing from wireguard_peer to wireguard_interface
+gerrit:33495/2 arp: source address selection
+gerrit:33156/3 ip-neighbor: GARP sent to bogus ip address
+gerrit:33449/9 ip: source address selection
+misc: 21.06 Release Notes
+session: free ctrl event data on connect rpc
+vcl: Don't use app_socket_api to notify VPP in parent when child exited
+vcl: epoll fix postponed evt handling
+stats: fix race conditions in vpp-api stats client
+session: avoid reordering unlisten and connect msg
+vlib: fix coverity warning
+vcl: fix worker cleanup
+tls: increase engine bits room in handle to support custom engine type
+vcl: fix fifo sharing
+session: fix listener ct transport retrieval on accept
+tcp: fix proto in port reuse check
+vlib: fix dangling reference in node_by_name hash
+memif: fix crash with zero-copy slave
+session: half-open free only on main thread
+docs: cleanup, remove stale material
+vcl: touch fifo on epoll del only if session open
+fib: make sure dpo is valid even when path pool expands
+fib: make sure adj is valid during walk
+ipsec: fix crypto ops in esp decrypt
+vppinfra: pool_free_elts() now supports fixed-size pools
+vcl: avoid multiple reads on peek
+vcl: avoid updating errno on ldp init check
+tls: change picotls plugin crypto module to accommodate new version picotls
+vcl: accept zero length writes
+vcl: epoll error handling fixes and improvements
+dpdk: silence coverity warning on use of uninitialized value
+build: fix build error after make wipe
+nat: fix broken nat44-ed cli
+build: fix centos-8 cmake missing package dependency
+tests: Fix 'test-wipe'
+dpdk: disable i40evf in favor of iavf patch
+svm: release mem order for fifo chunk list CAS
+session: avoid ct connects loop
+session: lcl transport info on accept
+srtp: cleanup build and default to disabled
+misc: bug fixes and improvements for stats Fuse fs
+interface: fix vnet_sw_interface_update_unnumbered
+tls: fix handling of failed accepts
+hsa: proxy listener support addition of fifo segments
+svm: fix inadequate atomic load for chunk mgr
+vppinfra: explicit blocking mode for sock connects
+misc: Initial changes for stable/2106 branch
+-------------------------------------------------------------
