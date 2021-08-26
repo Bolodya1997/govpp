@@ -1,6 +1,6 @@
-VPP Version                 : 21.06.0-9~g6f117ce4a
+VPP Version                 : 21.10-rc0~134-g6c34d989b
 Binapi-generator version    : govpp v0.4.0-dev
-VPP Base commit             : 1372178e0 fib: During the mfib lookup set the unicast FIB index in the packet so that a uRPF check on a for-us packet is done in the correct VRF
+VPP Base commit             : 6f6663f3b span: api cleanup
 ------------------ Cherry picked commits --------------------
 gerrit:33020/2 l3xc: reset dpo on delete
 gerrit:33303/2 memif: fix offset
@@ -11,47 +11,20 @@ gerrit:32413/6 wireguard: move adjacency processing from wireguard_peer to wireg
 gerrit:33495/2 arp: source address selection
 gerrit:33156/3 ip-neighbor: GARP sent to bogus ip address
 gerrit:33449/9 ip: source address selection
-misc: 21.06 Release Notes
-session: free ctrl event data on connect rpc
-vcl: Don't use app_socket_api to notify VPP in parent when child exited
-vcl: epoll fix postponed evt handling
-stats: fix race conditions in vpp-api stats client
-session: avoid reordering unlisten and connect msg
-vlib: fix coverity warning
-vcl: fix worker cleanup
-tls: increase engine bits room in handle to support custom engine type
-vcl: fix fifo sharing
-session: fix listener ct transport retrieval on accept
-tcp: fix proto in port reuse check
-vlib: fix dangling reference in node_by_name hash
-memif: fix crash with zero-copy slave
-session: half-open free only on main thread
-docs: cleanup, remove stale material
-vcl: touch fifo on epoll del only if session open
-fib: make sure dpo is valid even when path pool expands
-fib: make sure adj is valid during walk
-ipsec: fix crypto ops in esp decrypt
-vppinfra: pool_free_elts() now supports fixed-size pools
-vcl: avoid multiple reads on peek
-vcl: avoid updating errno on ldp init check
-tls: change picotls plugin crypto module to accommodate new version picotls
-vcl: accept zero length writes
-vcl: epoll error handling fixes and improvements
-dpdk: silence coverity warning on use of uninitialized value
-build: fix build error after make wipe
-nat: fix broken nat44-ed cli
-build: fix centos-8 cmake missing package dependency
-tests: Fix 'test-wipe'
-dpdk: disable i40evf in favor of iavf patch
-svm: release mem order for fifo chunk list CAS
-session: avoid ct connects loop
-session: lcl transport info on accept
-srtp: cleanup build and default to disabled
-misc: bug fixes and improvements for stats Fuse fs
-interface: fix vnet_sw_interface_update_unnumbered
-tls: fix handling of failed accepts
-hsa: proxy listener support addition of fifo segments
-svm: fix inadequate atomic load for chunk mgr
-vppinfra: explicit blocking mode for sock connects
-misc: Initial changes for stable/2106 branch
+gerrit:33164/3 dpdk: enable ena interrupt support in dpdk version 21.05
+gerrit:28513/20 capo: Calico Policies plugin
+gerrit:28083/16 acl: acl-plugin custom policies
+gerrit:31588/1 cnat: [WIP] no k8s maglev from pods
+gerrit:31868/1 ip6-nd: silent the source and target checks on given interface
+gerrit:32871/1 devices: Add queues params in create_if
+gerrit:32483/1 virtio: Still init unused txq
+gerrit:32482/1 virtio: compute cksums in output no offload
+gerrit:32476/3 gso: handle push flag in gro
+gerrit:31869/13 gso: do not try gro on small packets
+Revert "gso: fix the gro re-ordering for packets with PSH"
+gerrit:31321/10 devices: add support for pseudo header checksum
+gerrit:29386/9 virtio: DRAFT: multi tx support
+gerrit:32833/1 ipsec: disable linearization
+gerrit:32732/1 crypto: fix sw async crypto with chained buffers
+gerrit:32468/3 buffers: fix buffer linearization
 -------------------------------------------------------------
