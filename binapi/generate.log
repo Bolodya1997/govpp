@@ -1,7 +1,10 @@
-VPP Version                 : 21.10-rc0~134-g6c34d989b
+VPP Version                 : 21.10-rc0~137-g59f99d53a
 Binapi-generator version    : govpp v0.4.0-dev
 VPP Base commit             : 6f6663f3b span: api cleanup
 ------------------ Cherry picked commits --------------------
+gerrit:32271/6 memif: add support for ns abstract sockets
+gerrit:33268/2 vppinfra: fix sock init netns
+gerrit:33177/3 vppinfra: add abstract socket & netns fns
 gerrit:33020/2 l3xc: reset dpo on delete
 gerrit:33303/2 memif: fix offset
 gerrit:32685/4 wireguard: add events for peer
