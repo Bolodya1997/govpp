@@ -26,6 +26,11 @@ git_cherry_pick refs/changes/20/33020/2 # 33020 l3xc: reset dpo on delete
 git_cherry_pick refs/changes/68/33568/1  # 33568 ip: check if interface has link-local address (addition)
 git_cherry_pick refs/changes/58/33558/1  # 33558 ip: check if interface has link-local address
 
+# abstract sockets
+git_cherry_pick refs/changes/77/33177/3 # vppinfra: add abstract socket & netns fns
+git_cherry_pick refs/changes/68/33268/2 # vppinfra: fix sock init netns
+git_cherry_pick refs/changes/71/32271/6 # memif: add support for ns abstract sockets
+
 if [ "$(ls ./patch/*.patch 2> /dev/null)" ]; then
   git apply patch/*.patch
   git add --all
